@@ -5,12 +5,17 @@
   <div>
     <%= form.label :Search %>
     <%= form.text_field :query %>
+    <%= form.radio_button :time, 'lifetime', :checked => true %>
+    <%= label :time_lifetime, 'Lifetime' %>
+    <%= form.radio_button :time, 'season' %>
+    <%= label :time_lifetime, 'Season' %>
     <%= form.submit  "Search" %>
   </div>
 <% end %>
 
 <% if @response %>
   <div>
-    <%= @response.body %>
+    <%= @response.body %><br><br>
+    <%= @name['data']['account']['name'] %>
   </div>
 <% end %>
