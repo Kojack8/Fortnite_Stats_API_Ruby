@@ -1,12 +1,13 @@
 # Fortnite Stat Tracker
-
+This is a simple service desinged to let players review their statistics in the popular online game, Fortnite. 
+Stats are provided by https://fortnite-api.com/.
 ## Overview
 
 
 ***
 ## Live Demo
 
-You can try it out [here]()  
+You can try it out [here](https://whispering-harbor-40707.herokuapp.com/)  
 
 The design is currently primarily built for desktop use.
 
