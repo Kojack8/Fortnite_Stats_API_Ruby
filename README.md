@@ -1,8 +1,15 @@
 # Fortnite Stat Tracker
-This is a simple service desinged to let players review their statistics in the popular online game, Fortnite. 
-Stats are provided by https://fortnite-api.com/.
-## Overview
 
+## Overview
+This is a simple service designed to let players review their statistics in the popular online game, Fortnite. 
+All stats are provided by https://fortnite-api.com/.
+
+Using the program couldn't be any easier:
+1.) Enter the name of the Epic ID that you wish to search for.
+2.) Select the scope of your search, either the current season or all time.
+3.) Press search. If there's a problem with your query, the relevant  message will be displayed on screen.
+
+Users are able to opt out of stat sharing, therefore, some users stats may not be publically available or incomplete.
 
 ***
 ## Live Demo
