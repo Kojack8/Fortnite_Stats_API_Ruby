@@ -1,4 +1,141 @@
 <% unless @name['data']['stats']['all']['solo'] == nil%>
-  Solo: <%= @name['data']['stats']['all']['solo'] %>
-      <br><br>
+  <div class='stat_table'>
+    <div class='stat_header'>
+    Solo
+    </div>
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Score:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['score'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Score per minute:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['scorePerMin'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Score per match:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['scorePerMatch'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Wins:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['wins'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Top 10:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['top10'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Top 25:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['top25'] %>
+      </div>
+    </div>
+
+     <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Kills:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['kills'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Kills per minute:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['killsPerMin'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Kills per match:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['killsPerMatch'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Deaths:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['deaths'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'K/D Ratio:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['kd'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Matches:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['matches'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Win Rate:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['winRate'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Minutes played:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['minutesPlayed'] %>
+      </div>
+    </div>
+
+    <div class='stat_row'>
+      <div class='stat_cell'>
+       <%= 'Players Out Lived:' %>
+      </div>
+      <div class = 'stat_cell'>
+        <%=  @name['data']['stats']['all']['solo']['playersOutlived'] %>
+      </div>
+    </div>
+  </div>
 <% end %>

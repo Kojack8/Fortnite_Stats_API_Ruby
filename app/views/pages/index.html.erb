@@ -1,27 +1,33 @@
-<h1>Pages#index</h1>
 
 
-<%= form_with(url: "/", method: 'get')  do |form| %>
-  <div>
-    <%= form.label :Search %>
-    <%= form.text_field :query %>
-    <%= form.radio_button :time, 'lifetime', :checked => true %>
-    <%= label :time_lifetime, 'Lifetime' %>
-    <%= form.radio_button :time, 'season' %>
-    <%= label :time_lifetime, 'Season' %>
-    <%= form.submit  "Search" %>
-  </div>
-<% end %>
-
-<% if @response %>
-  <% if @response.status == 200 %>
-    <%= render "overall" %>
-    <%= render "solo" %>
-    <%= render "duo" %>
-    <%= render "trio" %>
-    <%= render "squad" %>
-  <% else %>
-  <%= @name['error'] %>
+<div class = 'search_form'>
+<h1>Fortnite Player Search</h1>
+<h4>Enter the Epic username you wish to search for.</h4>
+  <%= form_with(url: "/", method: 'get')  do |form| %>
+    <div>
+      <%= form.label :Search %>
+      <%= form.text_field :query %>
+      <%= form.radio_button :time, 'lifetime', :checked => true %>
+      <%= label :time_lifetime, 'Lifetime' %>
+      <%= form.radio_button :time, 'season' %>
+      <%= label :time_lifetime, 'Season' %>
+      <%= form.submit  "Search" %>
+    </div>
   <% end %>
-    
-<% end %>
+</div>
+
+<div class = 'stat_response'>
+  <% if @response %>
+    <% if @response.status == 200 %>
+      <%= render "overall" %>
+      <%= render "solo" %>
+      <%= render "duo" %>
+      <%= render "trio" %>
+      <%= render "squad" %>
+    <% else %>
+    <div class='response_error'>
+      <%= @name['error'] %>
+    </div>
+    <% end %>
+  <% end %>
+</div>

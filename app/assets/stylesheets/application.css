@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+  background-image: url('fortnite.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #ed7700;
+ }

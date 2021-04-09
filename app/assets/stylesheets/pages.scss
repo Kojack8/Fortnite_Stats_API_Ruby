@@ -2,3 +2,58 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+body{
+  text-align: center;
+}
+
+.search_form{
+  text-align: center;
+  background-color: grey;
+  border: 5px solid black;
+  padding: 10px;
+  display: inline-block;
+  font-size: 1em;
+}
+
+.stat_response{
+  text-align: center;
+}
+
+.stat_table{
+  display: inline-block;
+  padding: 10px;
+  border-collapse: collapse;
+  margin: 25px ;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #4c51f7;
+}
+
+.stat_header{
+  background-color: #4c51f7;
+  color: #ffffff;
+  text-align: center;
+}
+
+.stat_row{
+  display: table-row;
+  background-color: white;
+
+}
+
+.stat_cell{
+  display: table-cell;
+  padding: 3px 10px;
+	border: 1px solid #999999;
+}
+
+.response_error{
+  text-align: center;
+  background-color: white;
+  border: 5px solid black;
+  padding: 10px;
+  display: inline-block;
+  font-size: 1.3em;
+  color: red;
+}
