@@ -14,8 +14,14 @@
 <% end %>
 
 <% if @response %>
-  <div>
-    <%= @response.body %><br><br>
-    <%= @name['data']['account']['name'] %>
-  </div>
+  <% if @response.status == 200 %>
+    <%= render "overall" %>
+    <%= render "solo" %>
+    <%= render "duo" %>
+    <%= render "trio" %>
+    <%= render "squad" %>
+  <% else %>
+  <%= @name['error'] %>
+  <% end %>
+    
 <% end %>

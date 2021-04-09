@@ -1,0 +1,18 @@
+<% unless @name['data']['stats']['all']['overall'] == nil%>
+  Overall: <%= @name['data']['stats']['all']['overall'] %> <br><br>
+  <div class='stat_table'>
+    <div class='stat_row'>
+      <div class='stat_name'>
+       <%= 'Score:' %>
+      </div>
+      <div class = 'stat_val'>
+        <%=  @name['data']['stats']['all']['overall']['score'] %>
+      </div>
+    </div>
+    <div class='stat_row'>
+    </div>
+  </div>
+<% end %>
+
+    
+
