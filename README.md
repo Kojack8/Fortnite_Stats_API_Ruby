@@ -24,9 +24,9 @@ ___Thank you for your patience.___
 
 ## Screenshots 
 
-<img src="./app/assets/images/Screenshot_001.png" width="400">
-<img src="./app/assets/images/Screenshot_002.png" width="400">
-<img src="./app/assets/images/Screenshot_003.png" width="400">
+<img src="./app/assets/images/Screenshot_001.webp" width="400">
+<img src="./app/assets/images/Screenshot_002.webp" width="400">
+<img src="./app/assets/images/Screenshot_003.webp" width="400">
 
 
 
