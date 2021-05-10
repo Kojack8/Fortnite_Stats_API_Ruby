@@ -36,11 +36,11 @@ ___Thank you for your patience.___
 
 Clone the repo to your local machine: 
 ```ruby
-$ git clone https://github.com/Kojack8/Fortnite_stats_API
+$ git clone https://github.com/Kojack8/Fortnite_Stats_API_Ruby
 ```
 Navigate to the directory containing that repo:
 ```ruby
-$ cd Fortnite_stats_API/
+$ cd Fortnite_Stats_API_Ruby/
 ```
 Install the needed gems:
 ```ruby
